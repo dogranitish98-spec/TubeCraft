@@ -1,0 +1,11 @@
+.venv
+frontend/node_modules
+frontend/.vite
+.pytest_cache
+.coverage
+htmlcov
+.working_dir
+agnes_data
+error_logs
+.git
+.github/workflows/*-manual.yml

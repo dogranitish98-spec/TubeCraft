@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>TubeCraft Studio — AI Video Factory</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="1024x1024" href="/static/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0b0d12" />
+    <meta name="application-name" content="TubeCraft Studio" />
+    <meta name="mobile-web-app-title" content="TubeCraft" />
+    <meta name="description" content="AI video production workspace powered by the Agnes video engine." />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script>
+      /* ── 主题防闪烁：hydration/DOM 前同步设置 <html data-theme>（与官网一致）── */
+      (function () {
+        try {
+          var m = localStorage.getItem('theme');
+          var mode = (m === 'light' || m === 'dark' || m === 'system') ? m : 'system';
+          var dark = mode === 'dark' || (mode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="/professional-shell.css">
+</head>
+  <body class="text-ink min-h-screen font-sans" style="background: radial-gradient(ellipse 45% 38% at 50% 0%, color-mix(in oklab, var(--color-accent) 6%, transparent), transparent 70%), var(--color-paper);">
+    <div id="app"></div>
+    <script src="/static/pwa-runtime.js"></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="/professional-shell.js" defer></script>
+    <script src="/self-test-ui.js" defer></script>
+</body>
+</html>

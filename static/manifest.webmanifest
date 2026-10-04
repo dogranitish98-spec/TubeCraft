@@ -1,0 +1,63 @@
+{
+  "name": "TubeCraft Studio",
+  "short_name": "TubeCraft",
+  "description": "AI video production workspace powered by the Agnes video engine.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#07090C",
+  "theme_color": "#07090C",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "categories": [
+    "video",
+    "productivity",
+    "multimedia"
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Create video",
+      "short_name": "Create",
+      "url": "/?action=create",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Jobs",
+      "short_name": "Jobs",
+      "url": "/?action=jobs",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

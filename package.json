@@ -1,0 +1,36 @@
+{
+  "name": "tubecraft-studio",
+  "version": "1.0.0",
+  "description": "TubeCraft Studio \u2014 installable PWA video production workspace powered by the Agnes video engine.",
+  "bin": {
+    "free-short-video": "bin/cli.js",
+    "fsv": "bin/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "video",
+    "short-video",
+    "ai",
+    "text-to-video",
+    "image-generation",
+    "tts",
+    "subtitle",
+    "generator",
+    "free"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/tubecraft-studio.git"
+  },
+  "homepage": "https://github.com/lcy362/tubecraft-studio",
+  "bugs": {
+    "url": "https://github.com/lcy362/agnes-video-generator/issues"
+  }
+}
